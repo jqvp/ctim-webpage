@@ -1,4 +1,6 @@
 node_modules/
-potree/
+potree/pointclouds
+potree/libs
+potree/build
 
 .env

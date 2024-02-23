@@ -80,11 +80,11 @@
 		potreeViewer.setBackground(null);
 
 		potreeViewer.loadGUI(() => {
-				viewer.setLanguage('es');
+				potreeViewer.setLanguage('es');
 				$("#menu_file").next().show();
 				$("#menu_appearance").next().show();
 				$("#menu_tools").next().show();
-				viewer.toggleSidebar();
+				potreeViewer.toggleSidebar();
 		});
 
 	
@@ -110,6 +110,7 @@
 				let minWGS84 = proj4(pointcloudProjection, mapProjection, bb.min.toArray());
 				let maxWGS84 = proj4(pointcloudProjection, mapProjection, bb.max.toArray());
 			}
+			potreeViewer.fitToScreen();
 		});
 
 		function loop(timestamp){

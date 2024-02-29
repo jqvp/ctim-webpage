@@ -88,7 +88,7 @@
 		});
 
 	
-		Potree.loadPointCloud("../pointclouds/pasillo1/metadata.json", "pasillo1", e => {
+		/*Potree.loadPointCloud("../pointclouds/pasillo1/metadata.json", "pasillo1", e => {
 			potreeViewer.scene.addPointCloud(e.pointcloud);
 			e.pointcloud.position.z = 0;
 			let material = e.pointcloud.material;
@@ -111,7 +111,7 @@
 				let maxWGS84 = proj4(pointcloudProjection, mapProjection, bb.max.toArray());
 			}
 			potreeViewer.fitToScreen();
-		});
+		});*/
 
 		function loop(timestamp){
 			requestAnimationFrame(loop);

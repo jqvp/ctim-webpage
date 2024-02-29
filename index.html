@@ -18,7 +18,8 @@
         <div></div>
       </header>
       <main>
-        <iframe src="/potree/pages/index.html" 
+        <iframe src="/potree/pages/default.html"
+          id="the_iframe"
           frameborder="0" 
           title="Potree viewer" 
           width="100%" 
@@ -28,5 +29,10 @@
         </iframe>
       </main>
     </div>
+    <script>
+      function iFrameToURL(url) {
+        document.getElementById("the_iframe").src = url;
+      }
+    </script>
   </body>
 </html>

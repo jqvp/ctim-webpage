@@ -78,6 +78,32 @@
 		potreeViewer.setMinNodeSize(0);
 		potreeViewer.loadSettingsFromURL();
 		potreeViewer.setBackground(null);
+		potreeViewer.setClassifications({
+			1: { visible: true, name: "Noise / Unknown", color: [0.117, 0, 0.380, 1] },
+			2: { visible: true, name: "Terrain", color: [0.835, 0.407, 0.101, 1] },
+			3: { visible: true, name: "Tree", color: [0.321, 0.701, 0, 1] },
+			5: { visible: true, name: "Building", color: [0, 0.580, 0.8, 1] },
+			7: { visible: true, name: "Low Points", color: [1, 0.403, 0.258, 1] },
+			11: { visible: true, name: "Highway", color: [0.278, 0.278, 0.278, 1] },
+			13: { visible: true, name: "Substation / Terciary Line", color: [1, 0.533, 0.501, 1] },
+			14: { visible: true, name: "Chain", color: [0.286, 0, 0.921, 1] },
+			15: { visible: true, name: "Car", color: [0.403, 0.486, 0.537, 1] },
+			16: { visible: true, name: "Main Pylon", color: [0.439, 0.788, 1, 1] },
+			17: { visible: true, name: "Main Wire", color: [0, 0.580, 0.8, 1] },
+			18: { visible: true, name: "Guide Wire", color: [0.388, 0.258, 1, 1] },
+			19: { visible: true, name: "Secondary Pylon", color: [1, 0.078, 0.615, 1] },
+			20: { visible: true, name: "Secondary Wire", color: [1, 0.501, 0.709, 1] },
+			21: { visible: true, name: "Pylon Base", color: [0.494, 0.439, 1, 1] },
+			23: { visible: true, name: "Tree", color: [0.435, 0.819, 0.082, 1] },
+			25: { visible: true, name: "Terrain", color: [0.733, 0.305, 0.007, 1] },
+			27: { visible: true, name: "Pylon - Wire Joint", color: [
+					1.0,
+					0.4980392156862745,
+					0.054901960784313725, 1
+				]
+			},
+			DEFAULT: { visible: true, name: 'default'           , color: [0.3,  0.6,  0.6,  0.5] },
+		});
 
 		potreeViewer.loadGUI(() => {
 				potreeViewer.setLanguage('es');
